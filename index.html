@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pharoah Co Clothing</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <div class="name">PHAROAH CO CLOTHING</div>
+        <div class="sub">Move and Live Loud With Authority.</div>
+      </div>
+      <nav class="nav">
+        <a href="#shop">Shop</a>
+        <a href="#policies">Policies</a>
+        <button class="btn ghost" id="cartBtn">Cart <span id="cartCount" class="count">0</span></button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1 class="h-title">Luxury Without Permission.</h1>
+          <p class="h-tag">
+            Pharoah Co Clothing is built for those who refuse to blend in. Minimal design. Maximum presence.
+            No permission. No apologies.
+          </p>
+          <div class="h-cta">
+            <a class="btn primary" href="#shop">Enter Store</a>
+            <a class="btn" href="#policies">Shipping & Returns</a>
+          </div>
+
+          <div class="chips">
+            <span class="badge"><span class="dot"></span> USA ONLY SHIPPING</span>
+            <span class="badge"><span class="dot"></span> $12.99 SHIPPING</span>
+            <span class="badge"><span class="dot"></span> MADE TO ORDER 3–7 DAYS</span>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-img"></div>
+          <div class="caption">
+            <div class="left">
+              <div class="label">Collection</div>
+              <div class="value">Authority Heavyweight Series™</div>
+            </div>
+            <div class="right">
+              <span class="badge">LIMITED RELEASE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="shop" class="section">
+      <div class="container">
+        <h2>Shop</h2>
+
+        <div class="grid">
+          <!-- PRODUCT 1 -->
+          <article class="card">
+            <div class="media">
+              <div class="label">
+                <span class="badge">Limited Release</span>
+                <span class="badge">Made to Order (3–7 Days)</span>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="product-title">Black Pullover Hoodie</div>
+              <div class="product-sub">Authority Heavyweight Series™</div>
+
+              <div class="viewer" data-product="hoodie">
+                <div class="viewer-top">
+                  <div class="left">
+                    <button class="btn tiny" data-action="front">Front</button>
+                    <button class="btn tiny" data-action="back">Back</button>
+                  </div>
+                  <div class="right">
+                    <span class="badge">Drag to tilt</span>
+                  </div>
+                </div>
+
+                <div class="stage" id="hoodieStage">
+                  <img id="hoodieImg" src="hoodie-front.png" alt="Hoodie" />
+                  <div class="txt" id="hoodieTxt">PHAROAH CLOTHING CO</div>
+                  <div class="wm"></div>
+                </div>
+              </div>
+
+              <div class="field">
+                <label>Print Type</label>
+                <select id="hoodieMethod">
+                  <option value="dtg" data-price="140">Standard DTG — $140</option>
+                  <option value="puff" data-price="155">Puff Print — $155</option>
+                  <option value="emb_s" data-price="165">Embroidery (Small) — $165</option>
+                  <option value="emb_l" data-price="175">Embroidery (Large) — $175</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label>Size</label>
+                <select id="hoodieSize">
+                  <option>S</option><option>M</option><option>L</option><option>XL</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label>Custom Text</label>
+                <textarea id="hoodieText" placeholder="Type what you want on the hoodie..."></textarea>
+                <div class="helper">Live preview updates instantly. Front/Back toggle above.</div>
+              </div>
+
+              <div class="row">
+                <div class="price" id="hoodiePrice">$140</div>
+                <button class="btn primary" data-add="hoodie">Add to Cart</button>
+                <button class="btn" data-buy="hoodie">Buy Now</button>
+              </div>
+
+              <div class="notice">
+                Shipping is paid by the customer. <b>$12.99</b> flat rate. USA only.
+              </div>
+
+              <div class="why">
+                <h3>Why this costs what it costs</h3>
+                <ul>
+                  <li>Heavyweight 80/20 cotton-poly blend for structure + durability</li>
+                  <li>Premium streetwear silhouette (structured oversized fit)</li>
+                  <li>Made-to-order production with precision printing</li>
+                  <li>Designed for presence, not fast fashion</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUCT 2 -->
+          <article class="card">
+            <div class="media">
+              <div class="label">
+                <span class="badge">Limited Release</span>
+                <span class="badge">Made to Order (3–7 Days)</span>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="product-title">Black Hooded Long Sleeve</div>
+              <div class="product-sub">Authority Heavyweight Series™</div>
+
+              <div class="viewer" data-product="long">
+                <div class="viewer-top">
+                  <div class="left">
+                    <button class="btn tiny" data-action="front">Front</button>
+                    <button class="btn tiny" data-action="back">Back</button>
+                  </div>
+                  <div class="right">
+                    <span class="badge">Drag to tilt</span>
+                  </div>
+                </div>
+
+                <div class="stage" id="longStage">
+                  <img id="longImg" src="long-hood-front.png" alt="Hooded long sleeve" />
+                  <div class="txt" id="longTxt">PHAROAH CLOTHING CO</div>
+                  <div class="wm"></div>
+                </div>
+              </div>
+
+              <div class="field">
+                <label>Print Type</label>
+                <select id="longMethod">
+                  <option value="dtg" data-price="85">Standard DTG — $85</option>
+                  <option value="puff" data-price="100">Puff Print — $100</option>
+                  <option value="emb_s" data-price="110">Embroidery (Small) — $110</option>
+                  <option value="emb_l" data-price="120">Embroidery (Large) — $120</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label>Size</label>
+                <select id="longSize">
+                  <option>S</option><option>M</option><option>L</option><option>XL</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label>Custom Text</label>
+                <textarea id="longText" placeholder="Type what you want on the long sleeve..."></textarea>
+                <div class="helper">Live preview updates instantly. Front/Back toggle above.</div>
+              </div>
+
+              <div class="row">
+                <div class="price" id="longPrice">$85</div>
+                <button class="btn primary" data-add="long">Add to Cart</button>
+                <button class="btn" data-buy="long">Buy Now</button>
+              </div>
+
+              <div class="notice">
+                Shipping is paid by the customer. <b>$12.99</b> flat rate. USA only.
+              </div>
+
+              <div class="why">
+                <h3>Why this costs what it costs</h3>
+                <ul>
+                  <li>100% heavyweight cotton for a premium hand-feel</li>
+                  <li>Streetwear cut (structured oversized fit)</li>
+                  <li>Made-to-order production with precision printing</li>
+                  <li>Designed for presence, not fast fashion</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="policies" class="section">
+      <div class="container">
+        <h2>Policies</h2>
+        <p class="paragraph">
+          <b>Shipping:</b> USA only. Flat rate shipping is <b>$12.99</b>, paid by the customer. Made to order (3–7 business days).
+        </p>
+        <p class="paragraph">
+          <b>Returns:</b> Returns accepted. Customer must contact <b>w_middleton1@icloud.com</b> within 14 days of delivery.
+          Custom text items may be subject to approval depending on condition.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- CART DRAWER -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer">
+    <header>
+      <div class="t">Cart</div>
+      <button class="btn ghost tiny" id="closeCart">Close</button>
+    </header>
+
+    <div class="body" id="cartBody">
+      <p class="small">Your cart is empty.</p>
+    </div>
+
+    <div class="footer">
+      <div class="line"></div>
+      <div class="row spread">
+        <div class="small">Shipping</div>
+        <div class="small">$12.99</div>
+      </div>
+      <div class="row spread">
+        <div class="small">Total</div>
+        <div class="small" id="cartTotal">$0.00</div>
+      </div>
+      <button class="btn primary" id="checkoutBtn">Checkout (Links)</button>
+      <div class="small">
+        Apple Pay & Cash App Pay: Stripe links (you paste them in). Venmo: PayPal link (you paste it in).
+      </div>
+    </div>
+  </aside>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>PHAROAH CO CLOTHING</h3>
+        <div class="muted">Move and Live Loud With Authority.</div>
+        <div class="muted">Contact: w_middleton1@icloud.com</div>
+      </div>
+      <div>
+        <h3>Social</h3>
+        <a href="#">Instagram</a><br/>
+        <a href="#">TikTok</a><br/>
+        <a href="#">X</a><br/>
+        <a href="#">YouTube</a>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <a href="#policies">Shipping Policy</a><br/>
+        <a href="#policies">Return Policy</a><br/>
+        <a href="#policies">Privacy Policy</a><br/>
+        <a href="#policies">Terms of Service</a>
+      </div>
+    </div>
+    <div class="container copy">© <span id="year"></span> Pharoah Co Clothing. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
