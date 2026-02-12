@@ -1,60 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Pharoah Co Clothing</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-
-<header>
-  <h1>PHAROAH CO CLOTHING</h1>
-  <p class="tagline">Move and Live Loud With Authority.</p>
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand">
+      <div class="brandName">PHAROAH CO CLOTHING</div>
+      <div class="brandTag">Move and Live Loud With Authority.</div>
+    </div>
+  </div>
 </header>
 
-<section class="products">
+<main class="wrap">
 
-  <div class="product">
-    <h2>Black Pullover Hoodie</h2>
-    <p class="collection">Authority Heavyweight Series™</p>
+  <!-- EXAMPLE (BRANDED IMAGE) -->
+  <section class="card">
+    <h1 class="title">Black Pullover Hoodie</h1>
+    <p class="subTitle">Authority Heavyweight Series™</p>
 
-    <div class="badge">LIMITED RELEASE</div>
-    <div class="badge">MADE TO ORDER (3–7 BUSINESS DAYS)</div>
+    <div class="pillRow">
+      <div class="pill">LIMITED RELEASE</div>
+      <div class="pill">MADE TO ORDER (3–7 BUSINESS DAYS)</div>
+    </div>
 
-    <!-- VIEWER -->
-    <div class="viewer" id="hoodieViewer">
-      <img id="hoodieImg" src="hoodie-front.PNG" alt="Hoodie">
-      <div class="overlayText" id="hoodieTextPreview">PHAROAH CLOTHING CO</div>
+    <div class="sectionLabel">Example (what it can look like)</div>
+
+    <div class="viewer">
+      <img class="viewerImg" src="hoodie-front.PNG" alt="Example hoodie" />
+    </div>
+
+    <p class="note center">Below is the customizer (blank hoodie). Your text will go on the chest.</p>
+  </section>
+
+  <!-- CUSTOMIZER (BLANK IMAGE + LIVE TEXT) -->
+  <section class="card">
+    <div class="sectionLabel">Customize yours</div>
+
+    <div class="viewer custom" id="viewer">
+      <img id="mockImg" class="viewerImg" src="hoodie-blank-front.PNG" alt="Blank hoodie" />
+      <div id="textOverlay" class="textOverlay"> </div>
       <div class="wm"></div>
     </div>
 
     <div class="toggleRow">
-      <button class="mini" onclick="setView('front')">FRONT</button>
-      <button class="mini" onclick="setView('back')">BACK</button>
+      <button class="btnMini" onclick="setSide('front')">FRONT</button>
+      <button class="btnMini" onclick="setSide('back')">BACK</button>
     </div>
 
-    <select id="hoodiePrint">
+    <label class="label">Print Type</label>
+    <select id="printType" class="select">
       <option value="140">Standard DTG - $140</option>
       <option value="155">Puff Print - $155</option>
       <option value="165">Embroidery (Small) - $165</option>
       <option value="175">Embroidery (Large) - $175</option>
     </select>
 
-    <textarea id="hoodieText" placeholder="Enter your custom text here..." oninput="syncText()"></textarea>
+    <label class="label">Custom Text</label>
+    <textarea id="customText" class="textarea" placeholder="Type what you want on the chest..." oninput="updateText()"></textarea>
 
-    <button onclick="checkout()">BUY NOW</button>
+    <button class="buy" onclick="checkout()">BUY NOW</button>
 
-    <p class="smallNote">Shipping is paid by the customer. $12.99 (USA only).</p>
-  </div>
+    <p class="note center">Shipping is paid by the customer. <b>$12.99</b> flat rate. USA only.</p>
+    <p class="noteSmall center">Contact: w_middleton1@icloud.com</p>
+  </section>
 
-</section>
-
-<footer>
-  <p>Shipping: $12.99 (USA Only)</p>
-  <p>Contact: w_middleton1@icloud.com</p>
-</footer>
+</main>
 
 <script src="script.js"></script>
 </body>
